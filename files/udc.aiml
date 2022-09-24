@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>Hi</pattern>
+        <template>Hello there, I am Chatbot. What is your name? Write it as "My name is (name)" </template>
+    </category>
+    
+  <category>
+<pattern>MY NAME IS *</pattern>
+<template>Nice to meet you, <set name="name"><star/></set>.
+ Are you interested in computer science?
+<button>
+    <text>Yes</text>
+    <postback>categories</postback>
+</button>
+<button>
+    <text>No</text>
+    <postback>No</postback>
+</button>
+</template>
+</category>
+
+<category>
+    <pattern>categories</pattern>
+  <template>Great; let's explore career paths!
+
+<card>
+    <title>Video Game Developer</title>
+    <subtitle>These developers create the games you play!</subtitle>
+    <button>
+        <text>This sounds perfect!</text>
+        <postback>I am interested in VGD</postback>
+    </button>
+        <button>
+        <text>I am not interested in Video Game Development</text>
+        <postback>I am not interested in VGD</postback>
+    </button>
+</card>
+</template>
+</category>
+
+<category> 
+<pattern>I am interested in VGD</pattern>
+<template>  
+
+<link>
+    <text>Great; we've found the perfect career for you! 
+Click to find out more information about it</text>
+    <url>https://www.computerscience.org/careers/video-game-designer/</url>
+</link>
+</template>
+</category>
+
+<category>
+    <pattern>I am not interested in VGD</pattern>
+    <template>How about this one:
+
+<card>
+    <title>Information Security (Cybersecurity) Analyst</title>
+    <subtitle>Implement systems of safety and protect computer networks.</subtitle>
+    <button>
+        <text>This sounds perfect for me! </text>
+        <postback>I'm interested in CSA</postback>
+    </button>
+        <button>
+        <text>I'm not interested in Cybersecurity</text>
+        <postback>I'm not interested in CSA</postback>
+    </button>
+</card>
+</template>
+</category>
+
+<category> 
+<pattern>I am interested in CSA</pattern>
+<template>  
+
+<link>
+    <text>Great; we've found the perfect career for you! 
+Click to find out more information about it</text>
+    <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+</link>
+</template>
+</category>
+
+<category>
+    <pattern>I am not interested in CSA</pattern>
+    <template>How about this one:
+
+<card>
+    <title>Artificial Intelligence (AI) Engineer</title>
+    <subtitle>Create, test, and develop computer systems 
+    to mimick human intelligence 
+    </subtitle>
+    <button>
+        <text>This sounds perfect for me! </text>
+        <postback>I'm interested in AIE</postback>
+    </button>
+        <button>
+        <text>I'm not interested in Artificial Intelligence Engineering</text>
+        <postback>I'm not interested in AIE</postback>
+    </button>
+</card>
+</template>
+</category>
+
+<category> 
+<pattern>I am interested in AIE</pattern>
+<template>  
+
+<link>
+    <text>Great; we've found the perfect career for you! 
+Click to find out more information about it</text>
+    <url>https://www.datarobot.com/blog/what-is-artificial-intelligence-engineering/</url>
+</link>
+</template>
+</category>
+
+<category>
+    <pattern>I am not interested in AIE</pattern>
+    <template>How about this one:
+
+<card>
+    <title>Web Developer</title>
+    <subtitle>Code, design and build out the layout of a website. 
+    </subtitle>
+    <button>
+        <text>This sounds perfect for me! </text>
+        <postback>I'm interested in WD</postback>
+    </button>
+        <button>
+        <text>I'm not interested in Web Development</text>
+        <postback>I'm not interested in WD</postback>
+    </button>
+</card>
+</template>
+</category>
+
+<category> 
+<pattern>I am interested in WD</pattern>
+<template>  
+
+<link>
+    <text>Great; we've found the perfect career for you! 
+Click to find out more information about it</text>
+    <url>https://www.computerscience.org/careers/web-developer/</url>
+</link>
+</template>
+</category>
+
+<category>
+    <pattern>I am not interested in WD</pattern>
+    <template>How about this one:
+
+<card>
+    <title>Mobile App Development</title>
+    <subtitle>Create, code, and test for mobile applications.  
+    </subtitle>
+    <button>
+        <text>This sounds perfect for me! </text>
+        <postback>I'm interested in MAD</postback>
+    </button>
+        <button>
+        <text>I'm not interested in Mobile App Development</text>
+        <postback>I'm not interested in MAD</postback>
+    </button>
+</card>
+</template>
+</category>
+
+<category> 
+<pattern>I am interested in MAD</pattern>
+<template>  
+
+<link>
+    <text>Great; we've found the perfect career for you! 
+Click to find out more information about it</text>
+    <url>https://www.itcareerfinder.com/it-careers/mobile-application-developer.html/</url>
+</link>
+</template>
+</category>
+
+<category>
+    <pattern>I am not interested in MAD</pattern>
+    <template> So sorry, I am all out of suggestions for now. Come back next week for more career ideas!</template>
+</category>
+
+  <category>
+    <pattern>No</pattern>
+    <template>Sorry, this is only for those interested in computer science. 
+    Good-bye for now and have a great day!</template>
+</category>
+
+
+  
+
+
+
+
+
+
+</aiml>
